@@ -5,12 +5,16 @@
 
 /* ---------- Profile ---------- */
 
+// Public assets must be prefixed with Vite's base path ('/Portfolio-/' on GitHub
+// Pages) — plain '/file.jpg' URLs break when the site is served from a subpath.
+const asset = (file: string) => `${import.meta.env.BASE_URL}${file}`
+
 export const profile = {
   name: 'Stebin P B',
   firstName: 'Stebin',
   tagline: 'Data Scientist & ML Engineer',
   taglineCaps: 'DATA SCIENTIST & ML ENGINEER',
-  photo: '/stebin-photo.jpg',
+  photo: asset('stebin-photo.jpg'),
   heroHeadline:
     'I build machine learning systems that are accurate, scalable, and production-ready.',
   heroSubtext:
@@ -23,7 +27,7 @@ export const profile = {
   location: 'Kerala, India',
   github: 'https://github.com/stebin26',
   linkedin: 'https://www.linkedin.com/in/stebin26',
-  resumeUrl: '/Stebin_PB_Resume.pdf',
+  resumeUrl: asset('Stebin_PB_Resume.pdf'),
 } as const
 
 /* ---------- Navigation ---------- */
