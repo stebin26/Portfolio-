@@ -3,8 +3,8 @@ import { profile } from '../data/content'
 import Section from './Section'
 
 const credentials = [
-  { label: 'HackerRank SQL Advanced Certification', icon: BadgeCheck },
-  { label: 'Best Performer Award — Brototype', icon: Award },
+  { label: 'HackerRank SQL Advanced Certification', icon: BadgeCheck }
+  
 ]
 
 export default function About() {
