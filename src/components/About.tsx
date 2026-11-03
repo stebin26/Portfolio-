@@ -1,4 +1,4 @@
-import { GraduationCap, Award, BadgeCheck } from 'lucide-react'
+import { GraduationCap,  BadgeCheck } from 'lucide-react'
 import { profile } from '../data/content'
 import Section from './Section'
 
